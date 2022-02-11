@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Shop</title>
+      <link rel="stylesheet" href="app.css" />
+   </head>
+
+   <body>
+      <div id="backdrop"></div>
+      <nav id="nav">
+         <button id="Home-btn">Home</button>
+         <!-- <input type="search" name="Search" placeholder="Search" id="Search-bar"/> -->
+         <button id="Sell-btn">Sell</button>
+         <p>Online Shop</p>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <button id="Menu-btn">≡</button>
+      </nav>
+      <div id="sell-bar">
+         <fieldset>
+            <!-- <legend>Sell items</legend> -->
+            <label for="sell-img">Image</label>
+            <input type="url" id="sell-img"><br>
+            <label for="sell-desc">Title</label>
+            <input type="text" id="sell-desc"><br>
+            <label for="sell-cost">Cost</label>
+            <input type="number" id="sell-cost"><br>
+            <button id="sell-add">Add</button>
+            <button id="sell-cancel">Cancel</button>
+         </fieldset>
+      </div>
+      <div id="act-set">
+         <br />
+         <div id="act-set-img">
+            <label for="act-set-file"
+               ><img
+                  id="default-img"
+                  src="default profile.jpeg"
+                  alt=" "
+                  class="act-set-img-file"
+            /></label>
+         </div>
+         <input id="act-set-file" type="url" accept=".jpg" hidden />
+         <div id="field-div">
+            <fieldset id="fieldset">
+               <label for="name">Name :</label>
+               <input
+                  type="text"
+                  id="name"
+                  class="inpt-fld"
+                  maxlength="10"
+                  placeholder="max- 10 characters"
+               /><br />
+               <label for="mail">E-Mail:</label>
+               <input
+                  type="email"
+                  id="mail"
+                  class="inpt-fld"
+                  maxlength="35"
+               /><br />
+               <label for="Phone">Phone:</label>
+               <input
+                  type="tel"
+                  id="Phone"
+                  class="inpt-fld"
+                  accept="number"
+                  max="20"
+                  maxlength="20"
+               /><br />
+               <label for="DOB">DOB:</label>
+               <input type="date" id="DOB" class="inpt-fld" /><br><br>
+                  <button id="fld-cancel">Cancel</button>
+                  <button id="fld-ok">OK</button>
+            </fieldset>
+         </div>
+         <br />
+         <p class="p"><span id="p-name">UserName </span><button></button></p>
+         <p class="p"><span id="p-mail">UserMail</span> <button></button></p>
+         <p class="p"><span id="p-Phone">UserPhone </span><button></button></p>
+         <p class="p"><span id="p-age">UserAge</span> <button></button></p>
+      </div>
+      <div id="more-items">
+         <div id="profile">
+            <div id="div">
+               <img src="default profile.jpeg" alt=" " class="img" />
+            </div>
+            <div>
+               <p id="profile-name">User</p>
+               <p>0 ⭐</p>
+               <button id="profile-his">History</button>
+            </div>
+         </div>
+         <br />
+         <hr />
+         <p id="settings" class="more-item-button">Account settings</p>
+         <hr />
+         <p class="more-item-button">Contact Us</p>
+         <hr />
+         <p class="more-item-button">Report</p>
+         <hr />
+      </div>
+      <br /><br />
+      <div id="carted-items">
+         <button id="order-btn">Order Now</button>
+         <p hidden>Sorry! nothing in cart!</p>
+         <br /><br />
+      </div>
+      <div id="cart-bar">
+         Total Amount: $ <span id="cart">0</span><br />Items:
+         <span id="cart-items">0</span>
+         <button id="showCart-btn">ShowCart</button>
+      </div>
+      <div id="showCart"></div>
+      <div id="app"></div>
+   </body>
+   <script src="app.js"></script>
+</html>
